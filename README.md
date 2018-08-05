@@ -9,6 +9,8 @@ Export your kindle highlights to Google Sheets.
 
 kindle-highlights-to-googlesheets scrapes your kindle highlights from your [Amazon Read](https://read.amazon.com/notebook) page and exports them to a Google Sheet that you specify.
 
+Checkout [my exported highlights](https://docs.google.com/spreadsheets/d/14IiBOsxwf7A0gHjJZ5FMDgsB-rBXL4KuyxhjeCWADhY/edit?usp=sharing). 
+
 ## Setup
 Your credentials for accessing Amazon & Google Sheets should be stored in a file named credentials.json.  
 Look at the `credentials.example.json` file for reference.
