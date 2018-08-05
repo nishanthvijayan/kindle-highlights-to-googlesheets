@@ -1,5 +1,5 @@
 {
-  "name": "export_kindle_highlights",
+  "name": "kindle-highlights-to-googlesheets",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
