@@ -1,8 +1,10 @@
 # kindle-highlights-to-googlesheets
   
-   
-![logo](https://github.com/nishanthvijayan/kindle-highlights-to-googlesheets/blob/master/kindle-highlights-to-googlesheets.jpg)
+<p align="center">
+  <img src="https://github.com/nishanthvijayan/kindle-highlights-to-googlesheets/blob/master/kindle-highlights-to-googlesheets.jpg">
+</p>  
   
+        
 Export your kindle highlights to Google Sheets.
 
 kindle-highlights-to-googlesheets scrapes your kindle highlights from your [Amazon Read](https://read.amazon.com/notebook) page and exports them to a Google Sheet that you specify.
