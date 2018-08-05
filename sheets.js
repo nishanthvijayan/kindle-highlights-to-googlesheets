@@ -43,9 +43,9 @@ function insertHighlights(sheet, books) {
     const cellIndex = createRowColumnIndexGrid(cells, numberOfHighLights, 3);
 
     let curPos = 0;
-    for (let i = 0; i < books.length; i++) {
+    for (let i = 0; i < books.length; i += 1) {
       const book = books[i];
-      for (let j = 0; j < book.highlights.length; j++) {
+      for (let j = 0; j < book.highlights.length; j += 1) {
         cellIndex.get(`${curPos + 2}-1`).value = book.title;
         cellIndex.get(`${curPos + 2}-2`).value = book.author;
         cellIndex.get(`${curPos + 2}-3`).value = book.highlights[j];

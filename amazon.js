@@ -42,10 +42,10 @@ async function loginToAmazon(page) {
 
 
 async function extractHighlightsOfBook(page) {
-  return page.evaluate((HIGHLIGHT_SELECTOR, TITLE_SELECTOR, AUTHOR_SELECTOR) => ({
-    title: document.querySelector(TITLE_SELECTOR).innerText,
-    author: document.querySelector(AUTHOR_SELECTOR).innerText,
-    highlights: Array.from(document.querySelectorAll(HIGHLIGHT_SELECTOR))
+  return page.evaluate((HIGHLIGHT, TITLE, AUTHOR) => ({
+    title: document.querySelector(TITLE).innerText,
+    author: document.querySelector(AUTHOR).innerText,
+    highlights: Array.from(document.querySelectorAll(HIGHLIGHT))
       .map(highlight => highlight.innerText),
   }), HIGHLIGHT_SELECTOR, TITLE_SELECTOR, AUTHOR_SELECTOR);
 }
@@ -55,7 +55,7 @@ async function extractHighlights(page) {
   const books = await page.$$(BOOK_SELECTOR);
   const result = [];
 
-  for (let index = 0; index < books.length; index++) {
+  for (let index = 0; index < books.length; index += 1) {
     await books[index].click();
     // TODO: Fix this to instead wait till something appears
     await page.waitFor(FIVE_SECONDS);
