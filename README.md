@@ -78,7 +78,7 @@ npm start
 ```
 
 ## Warning
-The way it works right now, the script performs a full replace of any existing content in the spreadshhet. So any changes you make to the spreadsheet will be erased if you run the script again.  
+The way it works right now, the script performs a full replace of any existing content in the spreadsheet. So any changes you make to the spreadsheet will be erased if you run the script again.  
 
 Storing your amazon credentials in a plaintext file is not a good idea. Make sure that you never commit the file to version control or make the file public.
 
